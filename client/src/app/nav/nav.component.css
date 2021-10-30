@@ -1,0 +1,8 @@
+.me-2 {
+  margin-right: 5px !important;
+}
+
+.dropdown-toggle,
+.dropdown-item {
+  cursor: pointer;
+}
