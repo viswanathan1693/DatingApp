@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace API.DTO
 {
@@ -17,5 +18,10 @@ namespace API.DTO
         public string Content { get; set; }
         public DateTime? DateRead { get; set; }
         public DateTime MessageSent { get; set; }
+        [JsonIgnore]
+        public bool RecipientDeleted { get; set; }
+        [JsonIgnore]
+        public bool SenderDeleted { get; set; }
+        
     }
 }
